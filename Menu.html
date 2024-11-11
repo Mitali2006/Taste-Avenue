@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+    <style>
+        /* Main container styling */
+        #main-container {
+            background-color: beige;
+            padding: 20px;
+        }
+
+        /* Grid container styling */
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 20px;
+            margin: 20px 0;
+        }
+
+        /* Menu item styling */
+        .menu-item {
+            width: 300px;
+            height: 300px;
+            border: 2px solid black;
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+            border-radius: 15px;
+            box-shadow: 8px 8px 16px black;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .menu-item img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 15px;
+        }
+
+        .menu-item button {
+            position: relative;
+            z-index: 1;
+            padding: 10px 20px;
+            background-color: rgba(255, 255, 255, 0.8);
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        /* Navigation styling */
+        nav {
+            margin-bottom: 20px;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        nav li {
+            display: inline;
+            margin-right: 15px;
+        }
+        nav a {
+            text-decoration: none;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div id="main-container">
+        <fieldset>
+            <legend>What's on Your Mind Today?</legend>
+            <nav>
+                <details>
+                    <summary>Navigation</summary>
+                    <ul>
+                        <li><a href="1st.html">Home</a></li>
+                        <li><a href="About.html">About</a></li>
+                        <li><a href="Menu.html">Menu</a></li>
+                        <li><a href="Contact.html">Contact Us</a></li>
+                    </ul>
+                </details>
+            </nav>
+
+            <!-- Menu Items Grid -->
+            <div class="grid-container">
+                <!-- Section 1 -->
+                <div class="menu-item">
+                    <a href="NI.html">
+                        <img src="https://i.pinimg.com/474x/a8/c8/e0/a8c8e06dab9d767856fb9e0d7a48c6ce.jpg" alt="North Indian">
+                        <button>North Indian</button>
+                    </a>
+                </div>
+                <div class="menu-item">
+                    <a href="SI.html">
+                        <img src="https://i.pinimg.com/474x/cf/c5/6c/cfc56c3feafd00a65846225278ca4aef.jpg" alt="South Indian">
+                        <button>South Indian</button>
+                    </a>
+                </div>
+                <div class="menu-item">
+                    <a href="Burger.html">
+                        <img src="https://i.pinimg.com/474x/b6/ff/6f/b6ff6f1069bdb3ec62a6e40a7177a397.jpg" alt="Burger">
+                        <button>Burger</button>
+                    </a>
+                </div>
+
+                <!-- Section 2 -->
+                <div class="menu-item">
+                    <a href="Beverages.html">
+                        <img src="Beverages.avif" alt="Beverages">
+                        <button>Beverages</button>
+                    </a>
+                </div>
+                <div class="menu-item">
+                    <a href="Italian.html">
+                        <img src="https://i.pinimg.com/474x/dd/51/a2/dd51a2764405ad9f9d5c67eb5e76e58f.jpg" alt="Italian">
+                        <button>Italian</button>
+                    </a>
+                </div>
+                <div class="menu-item">
+                    <a href="Pizza.html">
+                        <img src="https://i.pinimg.com/474x/1e/a7/fc/1ea7fca510708ed25f97b2ca63809d32.jpg" alt="Pizza">
+                        <button>Pizza</button>
+                    </a>
+                </div>
+
+                <!-- Section 3 -->
+                <div class="menu-item">
+                    <a href="Dessert.html">
+                        <img src="https://i.pinimg.com/474x/4e/26/ff/4e26ff0867ffef7cf3ceecd420a13a4e.jpg" alt="Dessert">
+                        <button>Dessert</button>
+                    </a>
+                </div>
+                <div class="menu-item">
+                    <a href="WI.html">
+                        <img src="https://i.pinimg.com/474x/36/e4/c7/36e4c7c1da6d1b5495cfdc8ec1fd6b51.jpg" alt="Western Indian">
+                        <button>Western Indian</button>
+                    </a>
+                </div>
+                <div class="menu-item">
+                    <a href="Chinese.html">
+                        <img src="https://i.pinimg.com/474x/e1/66/57/e16657307081049ebf29e44f05dc1346.jpg" alt="Chinese">
+                        <button>Chinese</button>
+                    </a>
+                </div>
+
+                <!-- Section 4 -->
+                <div class="menu-item">
+                    <a href="Snacks.html">
+                        <img src="https://i.pinimg.com/474x/90/76/ff/9076ffe25767c5003290da18ff86b26b.jpg" alt="Snacks">
+                        <button>Snacks</button>
+                    </a>
+                </div>
+                <div class="menu-item">
+                    <a href="Chaap.html">
+                        <img src="https://i.pinimg.com/736x/7b/0e/21/7b0e21202ea2526920432346bf14959b.jpg" alt="Chaap">
+                        <button>Chaap</button>
+                    </a>
+                </div>
+                <div class="menu-item">
+                    <a href="Non-veg.html">
+                        <img src="https://i.pinimg.com/474x/63/ee/89/63ee89f3e840c57193b8f92fe60ba85d.jpg" alt="Non-Veg">
+                        <button>Non-Veg</button>
+                    </a>
+                </div>
+            </div>
+        </fieldset>
+    </div>
+</body>
+</html>

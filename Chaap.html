@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chaap Menu</title>
+    <style>
+        /* Main container styling */
+        #main-container {
+            background-color: beige;
+            padding: 20px;
+        }
+
+        /* Grid container styling */
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 20px;
+            margin: 20px 0;
+        }
+
+        /* Menu item styling */
+        .menu-item {
+            width: 300px;
+            height: 300px;
+            border: 2px solid black;
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+            border-radius: 15px;
+            box-shadow: 8px 8px 16px black;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .menu-item img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 15px;
+        }
+
+        .menu-item button {
+            position: relative;
+            z-index: 1;
+            padding: 10px 20px;
+            background-color: rgba(255, 255, 255, 0.8);
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        /* Navigation styling */
+        nav {
+            margin-bottom: 20px;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        nav li {
+            display: inline;
+            margin-right: 15px;
+        }
+        nav a {
+            text-decoration: none;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div id="main-container">
+        <fieldset>
+            <legend>Chaap Menu</legend>
+            <nav>
+                <details>
+                    <summary>Navigation</summary>
+                    <ul>
+                        <li><a href="1st.html">Home</a></li>
+                        <li><a href="About.html">About</a></li>
+                        <li><a href="Menu.html">Menu</a></li>
+                        <li><a href="Contact.html">Contact Us</a></li>
+                    </ul>
+                </details>
+            </nav>
+
+            <!-- Chaap Menu Items -->
+            <div class="grid-container">
+                <!-- Section 1 -->
+                <div class="menu-item">
+                    <a href="Order.html">
+                        <img src="https://i.pinimg.com/474x/e4/3f/82/e43f820286c95c8d871134ceb2b24c2f.jpg" alt="Malai Chaap">
+                        <button>Malai Chaap</button>
+                    </a>
+                </div>
+                <div class="menu-item">
+                    <a href="Order.html">
+                        <img src="https://i.pinimg.com/474x/cb/9a/e3/cb9ae3b253993d3b881bc161ccf475c5.jpg" alt="Afghani Chaap">
+                        <button>Afghani Chaap</button>
+                    </a>
+                </div>
+                <div class="menu-item">
+                    <a href="Order.html">
+                        <img src="https://i.pinimg.com/474x/fc/c7/84/fcc78436df44fc2e54649ddc0ab2dbce.jpg" alt="Tandoori Chaap">
+                        <button>Tandoori Chaap</button>
+                    </a>
+                </div>
+
+                <!-- Section 2 -->
+                <div class="menu-item">
+                    <a href="Order.html">
+                        <img src="https://i.pinimg.com/474x/a8/13/18/a81318e80e7c33148de252c619edc26c.jpg" alt="Achari Chaap">
+                        <button>Achari Chaap</button>
+                    </a>
+                </div>
+                <div class="menu-item">
+                    <a href="Order.html">
+                        <img src="https://i.pinimg.com/474x/31/66/14/316614cc5467fcaa36efaecfea3445d0.jpg" alt="Masala Chaap">
+                        <button>Masala Chaap</button>
+                    </a>
+                </div>
+                <div class="menu-item">
+                    <a href="Order.html">
+                        <img src="https://i.pinimg.com/474x/9d/94/32/9d9432cd169cb4b707374bda3d515c0f.jpg" alt="Stuffed Chaap">
+                        <button>Stuffed Chaap</button>
+                    </a>
+                </div>
+
+                <!-- Section 3 -->
+                <div class="menu-item">
+                    <a href="Order.html">
+                        <img src="https://i.pinimg.com/474x/42/73/8c/42738cf36a69c9ab3eb5121d5c472eb2.jpg" alt="Peri Peri Chaap">
+                        <button>Peri Peri Chaap</button>
+                    </a>
+                </div>
+                <div class="menu-item">
+                    <a href="Order.html">
+                        <img src="https://i.pinimg.com/474x/69/8f/e6/698fe67c513a59b0e8df1111f8383c20.jpg" alt="Gravy Chaap">
+                        <button>Gravy Chaap</button>
+                    </a>
+                </div>
+                <div class="menu-item">
+                    <a href="Order.html">
+                        <img src="https://i.pinimg.com/474x/2c/ac/0e/2cac0e1e80ecbec2e46f510caf270481.jpg" alt="Mughlai Chaap">
+                        <button>Mughlai Chaap</button>
+                    </a>
+                </div>
+
+                <!-- Section 4 -->
+                <div class="menu-item">
+                    <a href="Order.html">
+                        <img src="https://i.pinimg.com/474x/60/df/cd/60dfcd8096cd9a40c150f2313075d0f5.jpg" alt="Kadhai Chaap">
+                        <button>Kadhai Chaap</button>
+                    </a>
+                </div>
+                <div class="menu-item">
+                    <a href="Order.html">
+                        <img src="https://i.pinimg.com/474x/c8/7c/e5/c87ce5047bf99f94b7a789ec39c2ccd6.jpg" alt="Paneer Chaap">
+                        <button>Paneer Chaap</button>
+                    </a>
+                </div>
+                <div class="menu-item">
+                    <a href="Order.html">
+                        <img src="https://i.pinimg.com/474x/5b/f4/ce/5bf4cede08ef4fd89529e4fa497616f0.jpg" alt="Honey Chilli Chaap">
+                        <button>Honey Chilli Chaap</button>
+                    </a>
+                </div>
+            </div>
+        </fieldset>
+    </div>
+</body>
+</html>

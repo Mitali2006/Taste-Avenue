@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>North Indian Menu</title>
+    <style>
+        /* Main container styling */
+        #main-container {
+            background-color: beige;
+            padding: 20px;
+        }
+
+        /* Grid container styling */
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 20px;
+            margin: 20px 0;
+        }
+
+        /* Menu item styling */
+        .menu-item {
+            width: 300px;
+            height: 300px;
+            border: 2px solid black;
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+            border-radius: 15px;
+            box-shadow: 8px 8px 16px black;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .menu-item img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 15px;
+        }
+
+        .menu-item button {
+            position: relative;
+            z-index: 1;
+            padding: 10px 20px;
+            background-color: rgba(255, 255, 255, 0.8);
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        /* Navigation styling */
+        nav {
+            margin-bottom: 20px;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        nav li {
+            display: inline;
+            margin-right: 15px;
+        }
+        nav a {
+            text-decoration: none;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div id="main-container">
+        <fieldset>
+            <legend>North Indian Menu</legend>
+            <nav>
+                <details>
+                    <summary>Navigation</summary>
+                    <ul>
+                        <li><a href="1st.html">Home</a></li>
+                        <li><a href="About.html">About</a></li>
+                        <li><a href="Menu.html">Menu</a></li>
+                        <li><a href="Contact.html">Contact Us</a></li>
+                    </ul>
+                </details>
+            </nav>
+
+            <!-- North Indian Dishes -->
+            <div class="grid-container">
+                <!-- Section 1 -->
+                <div class="menu-item">
+                    <a href="Order.html">
+                        <img src="https://i.pinimg.com/474x/28/44/24/284424f4512779d0fa899070f715b380.jpg" alt="Chole Bhature">
+                        <button>Chole Bhature</button>
+                    </a>
+                </div>
+                <div class="menu-item">
+                    <a href="Order.html">
+                        <img src="https://i.pinimg.com/474x/49/69/24/496924d5349106c5a672fa0be30419a3.jpg" alt="Shahi Paneer">
+                        <button>Shahi Paneer</button>
+                    </a>
+                </div>
+                <div class="menu-item">
+                    <a href="Order.html">
+                        <img src="https://i.pinimg.com/474x/66/9f/7d/669f7d7e87b83321aa1e22f4899796c2.jpg" alt="Amritsari Aloo Kulcha">
+                        <button>Amritsari Aloo Kulcha</button>
+                    </a>
+                </div>
+
+                <!-- Section 2 -->
+                <div class="menu-item">
+                    <a href="Order.html">
+                        <img src="https://i.pinimg.com/474x/5c/30/31/5c3031ac36dce1bbd328f3a48fe8c68d.jpg" alt="Rajma Chawal">
+                        <button>Rajma Chawal</button>
+                    </a>
+                </div>
+                <div class="menu-item">
+                    <a href="Order.html">
+                        <img src="https://i.pinimg.com/474x/67/ae/4e/67ae4e31429c74b3fd789125ec5666cf.jpg" alt="Dal Makhani">
+                        <button>Dal Makhani</button>
+                    </a>
+                </div>
+                <div class="menu-item">
+                    <a href="Order.html">
+                        <img src="https://i.pinimg.com/474x/c4/3e/ab/c43eab1f5c1aa79d1f44547636b45228.jpg" alt="Malai Kofta">
+                        <button>Malai Kofta</button>
+                    </a>
+                </div>
+
+                <!-- Section 3 -->
+                <div class="menu-item">
+                    <a href="Order.html">
+                        <img src="https://i.pinimg.com/474x/dd/3d/2c/dd3d2c88739e53ab83eeb68ecc117b3d.jpg" alt="Aloo Paratha">
+                        <button>Aloo Paratha</button>
+                    </a>
+                </div>
+                <div class="menu-item">
+                    <a href="Order.html">
+                        <img src="https://i.pinimg.com/474x/81/1f/11/811f11addf633cfe3200e26a476f769d.jpg" alt="Saag Paneer">
+                        <button>Saag Paneer</button>
+                    </a>
+                </div>
+                <div class="menu-item">
+                    <a href="Order.html">
+                        <img src="https://i.pinimg.com/474x/d1/4e/3d/d14e3d4f9e4a1a26739628d2ced81041.jpg" alt="Garlic Naan">
+                        <button>Garlic Naan</button>
+                    </a>
+                </div>
+
+                <!-- Section 4 -->
+                <div class="menu-item">
+                    <a href="Order.html">
+                        <img src="https://i.pinimg.com/474x/bf/3b/22/bf3b22653efb4bcf54d76ffec4df1fd5.jpg" alt="Kadai Paneer">
+                        <button>Kadai Paneer</button>
+                    </a>
+                </div>
+                <div class="menu-item">
+                    <a href="Order.html">
+                        <img src="https://i.pinimg.com/564x/2f/5e/ae/2f5eae6b7d5badd5dbeee57e81d28a84.jpg" alt="Palak Paneer">
+                        <button>Palak Paneer</button>
+                    </a>
+                </div>
+                <div class="menu-item">
+                    <a href="Order.html">
+                        <img src="https://i.pinimg.com/474x/e8/c4/da/e8c4dadd7dde3ad5e6a4209d7560b54f.jpg" alt="Kadhi Chawal">
+                        <button>Kadhi Chawal</button>
+                    </a>
+                </div>
+
+                <!-- Section 5 -->
+                <div class="menu-item">
+                    <a href="Order.html">
+                        <img src="https://i.pinimg.com/474x/b0/3f/aa/b03faaa9b0ebbc041828963e2d0ca9f8.jpg" alt="Paneer Kulcha">
+                        <button>Paneer Kulcha</button>
+                    </a>
+                </div>
+                <div class="menu-item">
+                    <a href="Order.html">
+                        <img src="https://i.pinimg.com/474x/1b/da/ca/1bdaca54b40441bc8a1bccc733e3ca43.jpg" alt="Samosa">
+                        <button>Samosa</button>
+                    </a>
+                </div>
+                <div class="menu-item">
+                    <a href="Order.html">
+                        <img src="https://i.pinimg.com/474x/2a/ae/83/2aae834323edc03eded3a6c3e629ba1b.jpg" alt="Makki ki Roti">
+                        <button>Makki ki Roti & Sarson ka Saag</button>
+                    </a>
+                </div>
+            </div>
+        </fieldset>
+    </div>
+</body>
+</html>

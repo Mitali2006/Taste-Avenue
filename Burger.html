@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Burger Menu</title>
+    <style>
+        /* Main container styling */
+        #main-container {
+            background-color: beige;
+            padding: 20px;
+        }
+
+        /* Grid container styling */
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 20px;
+            margin: 20px 0;
+        }
+
+        /* Menu item styling */
+        .menu-item {
+            width: 300px;
+            height: 300px;
+            border: 2px solid black;
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+            border-radius: 15px;
+            box-shadow: 8px 8px 16px black;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .menu-item img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 15px;
+        }
+
+        .menu-item button {
+            position: relative;
+            z-index: 1;
+            padding: 10px 20px;
+            background-color: rgba(255, 255, 255, 0.8);
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        /* Navigation styling */
+        nav {
+            margin-bottom: 20px;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        nav li {
+            display: inline;
+            margin-right: 15px;
+        }
+        nav a {
+            text-decoration: none;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div id="main-container">
+        <fieldset>
+            <legend>Burger Menu</legend>
+            <nav>
+                <details>
+                    <summary>Navigation</summary>
+                    <ul>
+                        <li><a href="1st.html">Home</a></li>
+                        <li><a href="About.html">About</a></li>
+                        <li><a href="Menu.html">Menu</a></li>
+                        <li><a href="Contact.html">Contact Us</a></li>
+                    </ul>
+                </details>
+            </nav>
+
+            <!-- Burger Menu Items -->
+            <div class="grid-container">
+                <!-- Section 1 -->
+                <div class="menu-item">
+                    <a href="Order.html">
+                        <img src="https://i.pinimg.com/474x/ff/0b/0a/ff0b0aa39c7633e77fe72f83acbc31ae.jpg" alt="Aloo Tikki Burger">
+                        <button>Aloo Tikki Burger</button>
+                    </a>
+                </div>
+                <div class="menu-item">
+                    <a href="Order.html">
+                        <img src="https://i.pinimg.com/736x/8f/32/72/8f32721adbb11e95a251a9922ead3762.jpg" alt="Maharaja Burger">
+                        <button>Maharaja Burger</button>
+                    </a>
+                </div>
+                <div class="menu-item">
+                    <a href="Order.html">
+                        <img src="https://i.pinimg.com/474x/b6/58/45/b658451c335e60fb7cad7fba3e732bbb.jpg" alt="Paneer Burger">
+                        <button>Paneer Burger</button>
+                    </a>
+                </div>
+
+                <!-- Section 2 -->
+                <div class="menu-item">
+                    <a href="Order.html">
+                        <img src="https://i.pinimg.com/474x/94/89/b1/9489b193c1a55ad97ff917aaf7aa8df9.jpg" alt="Classic Veggie Burger">
+                        <button>Classic Veggie Burger</button>
+                    </a>
+                </div>
+                <div class="menu-item">
+                    <a href="Order.html">
+                        <img src="https://i.pinimg.com/474x/da/7a/fe/da7afef77f6b398008b2994f5492f5cc.jpg" alt="Spicy Bean Burger">
+                        <button>Spicy Bean Burger</button>
+                    </a>
+                </div>
+                <div class="menu-item">
+                    <a href="Order.html">
+                        <img src="https://i.pinimg.com/474x/30/1b/bc/301bbcba18a03bb7db624f828115509b.jpg" alt="Cheese Burst Burger">
+                        <button>Cheese Burst Burger</button>
+                    </a>
+                </div>
+
+                <!-- Section 3 -->
+                <div class="menu-item">
+                    <a href="Order.html">
+                        <img src="https://i.pinimg.com/474x/94/89/b1/9489b193c1a55ad97ff917aaf7aa8df9.jpg" alt="Veggie Delight Burger">
+                        <button>Veggie Delight Burger</button>
+                    </a>
+                </div>
+                <div class="menu-item">
+                    <a href="Order.html">
+                        <img src="https://i.pinimg.com/474x/8b/ca/db/8bcadb01d9de6142d3736cc3da137bb1.jpg" alt="Tandoori Paneer Burger">
+                        <button>Tandoori Paneer Burger</button>
+                    </a>
+                </div>
+                <div class="menu-item">
+                    <a href="Order.html">
+                        <img src="https://i.pinimg.com/474x/9a/bd/a5/9abda5f2511beab51c9101c6fd0a07f0.jpg" alt="Mexican Veggie Burger">
+                        <button>Mexican Veggie Burger</button>
+                    </a>
+                </div>
+
+                <!-- Section 4 -->
+                <div class="menu-item">
+                    <a href="Order.html">
+                        <img src="https://i.pinimg.com/474x/94/89/b1/9489b193c1a55ad97ff917aaf7aa8df9.jpg" alt="Peri Peri Veggie Burger">
+                        <button>Peri Peri Veggie Burger</button>
+                    </a>
+                </div>
+                <div class="menu-item">
+                    <a href="Order.html">
+                        <img src="https://i.pinimg.com/474x/d4/ef/cb/d4efcb9dbb705b625544283c4731bab4.jpg" alt="Herb Chilli Cheese Burger">
+                        <button>Herb Chilli Cheese Burger</button>
+                    </a>
+                </div>
+                <div class="menu-item">
+                    <a href="Order.html">
+                        <img src="https://i.pinimg.com/474x/8b/ca/db/8bcadb01d9de6142d3736cc3da137bb1.jpg" alt="Chilli Garlic Paneer Burger">
+                        <button>Chilli Garlic Paneer Burger</button>
+                    </a>
+                </div>
+            </div>
+        </fieldset>
+    </div>
+</body>
+</html>

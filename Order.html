@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing:border-box;
+            margin:5px;
+            padding:5px;
+            border-radius:15px;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content:center;
+            height: 70vh;
+            border-radius:10px
+        }
+        #div0 {
+            background-color:beige;
+            border:3px solid black;
+            box-sizing:border-box;
+            margin:5px;
+            padding:5px;
+            border-radius:15px;
+        }
+        button {
+            background-color:blue;
+
+        }
+        button:hover {
+            background-color: darkblue;
+        }
+    </style>
+</head>
+<body>
+    <div id="div0">
+        <form>
+            <h1>ORDER NOW</h1>
+                <details>
+                    <summary>Navigation</summary>
+                    <p>
+                        <ul>
+                            <li><a href="1st.html">Home</a> </li>
+                            <li><a href="About.html">About</a> </li>
+                            <li><a href="Menu.html">Menu</a> </li>
+                            <li><a href="Contact.html">Contact Us</a> </li>
+                        </ul>
+                    </p>
+                </details>
+            <div id="form">
+                <div id="row1">
+                    <label for="name"><b>Name:</b></label>
+                    <input type="text" name="myname" id="name" placeholder="Enter Your Name" required>
+                </div>
+                <div id="row2">
+                    <label for="email"><b>E-mail:</b></label>
+                    <input type="email" name="myemail" id="email" placeholder="Enter Your E-mail ID" required>
+                </div>
+                <div id="row3">
+                    <label for="phn"><b>Phone No.:</b></label>
+                    <input type="phone" name="myphone" id="phn" placeholder="Enter Your Phone No." required>
+                </div>
+                <div id="row4">
+                    <label for="address"><b>Address:</b></label>
+                    <input type="address" name="myaddress" id="address" placeholder="Flat No./Building/Colony/City" required>
+                </div>
+            </div>
+            
+                <button type="submit"><a href="Thanks.html">Submit</a></button>
+            
+           
+                <button type="reset"><a href="Order.html">Reset</a></button>
+            
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beverages Menu</title>
+    <style>
+        /* Main container styling */
+        #main-container {
+            background-color: beige;
+            padding: 20px;
+        }
+
+        /* Grid container styling */
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 20px;
+            margin: 20px 0;
+        }
+
+        /* Menu item styling */
+        .menu-item {
+            width: 300px;
+            height: 200px;
+            border: 2px solid black;
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+            border-radius: 15px;
+            box-shadow: 8px 8px 16px black;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .menu-item img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 15px;
+        }
+
+        .menu-item button {
+            position: relative;
+            z-index: 1;
+            padding: 10px 20px;
+            background-color: rgba(255, 255, 255, 0.8);
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        /* Navigation styling */
+        nav {
+            margin-bottom: 20px;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        nav li {
+            display: inline;
+            margin-right: 15px;
+        }
+        nav a {
+            text-decoration: none;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div id="main-container">
+        <fieldset>
+            <legend>Beverages</legend>
+            <nav>
+                <details>
+                    <summary>Navigation</summary>
+                    <ul>
+                        <li><a href="1st.html">Home</a></li>
+                        <li><a href="About.html">About</a></li>
+                        <li><a href="Menu.html">Menu</a></li>
+                        <li><a href="Contact.html">Contact Us</a></li>
+                    </ul>
+                </details>
+            </nav>
+
+            <div class="grid-container">
+                <!-- Beverages Items -->
+                <div class="menu-item">
+                    <a href="Order.html">
+                        <img src="https://i.pinimg.com/474x/e3/83/f9/e383f9aba12fcabbffd116323690fb57.jpg" alt="Latte">
+                        <button>Latte</button>
+                    </a>
+                </div>
+
+                <div class="menu-item">
+                    <a href="Order.html">
+                        <img src="https://i.pinimg.com/564x/5c/4d/7d/5c4d7d8d2845ca8f6f48bcedb94a39ca.jpg">
+                        <button>Cappuccino</button>
+                    </a>
+                </div>
+
+                <div class="menu-item">
+                    <a href="Order.html">
+                        <img src="https://i.pinimg.com/564x/a8/02/a3/a802a3347368a5155c3ba3388bc77ce1.jpg" alt="Espresso">
+                        <button>Espresso</button>
+                    </a>
+                </div>
+
+                <div class="menu-item">
+                    <a href="Order.html">
+                        <img src="https://i.pinimg.com/564x/d1/a5/27/d1a527b271ce9a20ee4853c0f124f988.jpg" alt="Green Tea">
+                        <button>Green Tea</button>
+                    </a>
+                </div>
+
+                <div class="menu-item">
+                    <a href="Order.html">
+                        <img src="https://i.pinimg.com/564x/5c/7a/43/5c7a43138d9740941d0326a156551135.jpg" alt="Iced Coffee">
+                        <button>Iced Coffee</button>
+                    </a>
+                </div>
+
+                <div class="menu-item">
+                    <a href="Order.html">
+                        <img src="https://i.pinimg.com/564x/21/a1/fe/21a1fe8585c4993b32b923fedef172ed.jpg" alt="Smoothie">
+                        <button>Smoothie</button>
+                    </a>
+                </div>
+
+                <div class="menu-item">
+                    <a href="Order.html">
+                        <img src="https://i.pinimg.com/564x/b0/95/0c/b0950c22362a3a30e353bac00bc2ad31.jpg" alt="Milkshake">
+                        <button>Milkshake</button>
+                    </a>
+                </div>
+
+                <div class="menu-item">
+                    <a href="Order.html">
+                        <img src="https://i.pinimg.com/564x/ae/36/95/ae3695f39c91093e61e81105684f3021.jpg" alt="Hot Chocolate">
+                        <button>Hot Chocolate</button>
+                    </a>
+                </div>
+
+                <div class="menu-item">
+                    <a href="Order.html">
+                        <img src="https://i.pinimg.com/564x/80/3c/24/803c245da7e21a30ae89da5a5435f850.jpg" alt="Mocha">
+                        <button>Mocha</button>
+                    </a>
+                </div>
+
+                <div class="menu-item">
+                    <a href="Order.html">
+                        <img src="https://i.pinimg.com/564x/2a/af/94/2aaf948e8a46410a39a7b78874589414.jpg" alt="Lemonade">
+                        <button>Lemonade</button>
+                    </a>
+                </div>
+
+                <div class="menu-item">
+                    <a href="Order.html">
+                        <img src="https://i.pinimg.com/474x/a7/bf/68/a7bf68a8976eb5a1f4294945de840850.jpg" alt="Orange Juice">
+                        <button>Orange Juice</button>
+                    </a>
+                </div>
+
+                <div class="menu-item">
+                    <a href="Order.html">
+                        <img src="https://i.pinimg.com/564x/7a/d3/ff/7ad3ffe081849e84a3bc47e4805f4fbd.jpg" alt="Mocktail">
+                        <button>Mocktail</button>
+                    </a>
+                </div>
+            </div>
+        </fieldset>
+    </div>
+</body>
+</html>

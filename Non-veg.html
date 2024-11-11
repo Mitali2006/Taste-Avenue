@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Non-Veg Menu</title>
+    <style>
+        /* Main container styling */
+        #main-container {
+            background-color: beige;
+            padding: 20px;
+        }
+
+        /* Grid container styling */
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 20px;
+            margin: 20px 0;
+        }
+
+        /* Menu item styling */
+        .menu-item {
+            width: 300px;
+            height: 300px;
+            border: 2px solid black;
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+            border-radius: 15px;
+            box-shadow: 8px 8px 16px black;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .menu-item img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 15px;
+        }
+
+        .menu-item button {
+            position: relative;
+            z-index: 1;
+            padding: 10px 20px;
+            background-color: rgba(255, 255, 255, 0.8);
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        /* Navigation styling */
+        nav {
+            margin-bottom: 20px;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        nav li {
+            display: inline;
+            margin-right: 15px;
+        }
+        nav a {
+            text-decoration: none;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div id="main-container">
+        <fieldset>
+            <legend>Non-Veg Menu</legend>
+            <nav>
+                <details>
+                    <summary>Navigation</summary>
+                    <ul>
+                        <li><a href="1st.html">Home</a></li>
+                        <li><a href="About.html">About</a></li>
+                        <li><a href="Menu.html">Menu</a></li>
+                        <li><a href="Contact.html">Contact Us</a></li>
+                    </ul>
+                </details>
+            </nav>
+
+            <!-- Non-Veg Dishes -->
+            <div class="grid-container">
+                <!-- Section 1 -->
+                <div class="menu-item">
+                    <a href="Order.html">
+                        <img src="https://i.pinimg.com/474x/93/e9/79/93e97987768f9240c5ffda2475c0ce28.jpg" alt="Butter Chicken">
+                        <button>Butter Chicken</button>
+                    </a>
+                </div>
+                <div class="menu-item">
+                    <a href="Order.html">
+                        <img src="https://i.pinimg.com/474x/19/77/e7/1977e7177e1a3667098184485d146f39.jpg" alt="Chicken Tikka">
+                        <button>Chicken Tikka</button>
+                    </a>
+                </div>
+                <div class="menu-item">
+                    <a href="Order.html">
+                        <img src="https://i.pinimg.com/474x/52/1a/01/521a01d28f8bc09a8042ee20a0f6451c.jpg" alt="Tandoori Chicken">
+                        <button>Tandoori Chicken</button>
+                    </a>
+                </div>
+
+                <!-- Section 2 -->
+                <div class="menu-item">
+                    <a href="Order.html">
+                        <img src="https://i.pinimg.com/474x/70/f1/51/70f151786fdd6ef1d8adcbef9756a075.jpg" alt="Rogan Josh">
+                        <button>Rogan Josh</button>
+                    </a>
+                </div>
+                <div class="menu-item">
+                    <a href="Order.html">
+                        <img src="https://i.pinimg.com/474x/1c/4e/7d/1c4e7d9a2cc462a0299d5ddba4069c70.jpg" alt="Fish Curry">
+                        <button>Fish Curry</button>
+                    </a>
+                </div>
+                <div class="menu-item">
+                    <a href="Order.html">
+                        <img src="https://i.pinimg.com/474x/11/71/7b/11717bc1ac6f5ab7c378e755a014a129.jpg" alt="Amritsari Fish">
+                        <button>Amritsari Fish</button>
+                    </a>
+                </div>
+
+                <!-- Section 3 -->
+                <div class="menu-item">
+                    <a href="Order.html">
+                        <img src="https://i.pinimg.com/474x/c0/a4/22/c0a422bdc0afab4664a4c5e72c5b24c2.jpg" alt="Andhra Chicken Curry">
+                        <button>Andhra Chicken Curry</button>
+                    </a>
+                </div>
+                <div class="menu-item">
+                    <a href="Order.html">
+                        <img src="https://i.pinimg.com/474x/62/2a/eb/622aeba5707f6d0004b0412cde0c4cf9.jpg" alt="Mutton Korma">
+                        <button>Mutton Korma</button>
+                    </a>
+                </div>
+                <div class="menu-item">
+                    <a href="Order.html">
+                        <img src="https://i.pinimg.com/474x/9e/b9/79/9eb97976aefc7bca39ccf43474f8dca9.jpg" alt="Kakori Kebab">
+                        <button>Kakori Kebab</button>
+                    </a>
+                </div>
+            </div>
+        </fieldset>
+    </div>
+</body>
+</html>

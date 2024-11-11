@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: beige;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            margin: 0;
+            padding: 2rem 0;
+            min-height: 100vh;
+        }
+        .container {
+            background-color: wheat;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            max-width: 500px;
+            width: 100%;
+            margin-top: 2rem;
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 1.5rem;
+            color: darkslategray;
+        }
+        label {
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+            display: block;
+        }
+        input, select, textarea, button {
+            width: 100%;
+            padding: 0.75rem;
+            margin-bottom: 1.5rem;
+            border: 1px solid lightgray;
+            border-radius: 5px;
+            font-size: 1rem;
+        }
+        select, textarea {
+            background-color: white;
+        }
+        .radio-group {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 1.5rem;
+        }
+        .radio-group label {
+            font-weight: normal;
+            margin: 0;
+        }
+        button {
+            background-color: blue;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: darkblue;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <form class="contact-form" action="/submit-form" method="POST">
+            <h1>Contact Us</h1>
+            <nav id="navbar">
+                <details>
+                    <summary>Navigation</summary>
+                    <p>
+                        <ul>
+                            <li><a href="1st.html">Home</a> </li>
+                            <li><a href="About.html">About</a> </li>
+                            <li><a href="Menu.html">Menu</a> </li>
+                            <li><a href="Contact.html">Contact Us</a> </li>
+                        </ul>
+                    </p>
+                </details>
+            </nav>
+            <br>
+            <label for="query">Type of Query</label>
+            <select name="myQuery" id="query" required>
+                <option value="sel" disabled selected>Select</option>
+                <option value="ord">Order related Issue</option>
+                <option value="site">Site related Issues</option>
+                <option value="fed">Complaint related Issues</option>
+                <option value="others">Others</option>
+            </select>
+
+            <label for="name">Name</label>
+            <input type="text" name="myName" id="name" placeholder="Enter your Name" required>
+
+            <label for="email" required>Email-Id</label>
+            <input type="email" name="myEmail" id="email" placeholder="Enter your Email" required>
+
+            <label for="phn">Phone Number</label>
+            <input type="tel" name="myPhone" id="phn" placeholder="Enter your Phone Number" pattern="^\d{10}$" title="Please enter a valid 10-digit phone number" required>
+
+            <fieldset class="radio-group">
+                <legend>Are you a member of Taste Avenue?</legend>
+                <label><input type="radio" name="eligible" value="yes" required> Yes</label>
+                <label><input type="radio" name="eligible" value="no"> No</label>
+            </fieldset>
+
+            <label for="message">Elaborate your query</label>
+            <textarea name="msg" id="message" rows="5" placeholder="Describe your issue here..." required></textarea>
+
+            <button type="submit">Submit</button>
+            <button type="reset">Reset</button>
+        </form>
+    </div>
+</body>
+</html>

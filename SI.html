@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>South Indian Menu</title>
+    <style>
+        /* Main container styling */
+        #main-container {
+            background-color: beige;
+            padding: 20px;
+        }
+
+        /* Grid container styling */
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 20px;
+            margin: 20px 0;
+        }
+
+        /* Menu item styling */
+        .menu-item {
+            width: 300px;
+            height: 300px;
+            border: 2px solid black;
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+            border-radius: 15px;
+            box-shadow: 8px 8px 16px black;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .menu-item img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 15px;
+        }
+
+        .menu-item button {
+            position: relative;
+            z-index: 1;
+            padding: 10px 20px;
+            background-color: rgba(255, 255, 255, 0.8);
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        /* Navigation styling */
+        nav {
+            margin-bottom: 20px;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        nav li {
+            display: inline;
+            margin-right: 15px;
+        }
+        nav a {
+            text-decoration: none;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div id="main-container">
+        <fieldset>
+            <legend>South Indian Menu</legend>
+            <nav>
+                <details>
+                    <summary>Navigation</summary>
+                    <ul>
+                        <li><a href="1st.html">Home</a></li>
+                        <li><a href="About.html">About</a></li>
+                        <li><a href="Menu.html">Menu</a></li>
+                        <li><a href="Contact.html">Contact Us</a></li>
+                    </ul>
+                </details>
+            </nav>
+
+            <!-- South Indian Dishes -->
+            <div class="grid-container">
+                <!-- Section 1 -->
+                <div class="menu-item">
+                    <a href="Order.html">
+                        <img src="https://i.pinimg.com/474x/2b/64/e1/2b64e15ac11687bb3074b9f7abc87edd.jpg" alt="Biryani">
+                        <button>Biryani</button>
+                    </a>
+                </div>
+                <div class="menu-item">
+                    <a href="Order.html">
+                        <img src="https://i.pinimg.com/474x/f4/d5/35/f4d535a76f86f7c909f15cf0457ccbf2.jpg" alt="Idli">
+                        <button>Idli</button>
+                    </a>
+                </div>
+                <div class="menu-item">
+                    <a href="Order.html">
+                        <img src="https://i.pinimg.com/474x/fe/11/ac/fe11aca4d886e8b63a696958594fe6a3.jpg" alt="Medu Vada">
+                        <button>Medu Vada</button>
+                    </a>
+                </div>
+
+                <!-- Section 2 -->
+                <div class="menu-item">
+                    <a href="Order.html">
+                        <img src="https://i.pinimg.com/474x/8c/32/ca/8c32cad6e05a6745e4caeb800a041621.jpg" alt="Kootu">
+                        <button>Kootu</button>
+                    </a>
+                </div>
+                <div class="menu-item">
+                    <a href="Order.html">
+                        <img src="https://i.pinimg.com/474x/de/9b/ef/de9bef52434fa2c195f739b762d65a0d.jpg" alt="Coconut Chutney">
+                        <button>Coconut Chutney</button>
+                    </a>
+                </div>
+                <div class="menu-item">
+                    <a href="Order.html">
+                        <img src="https://i.pinimg.com/474x/7f/6d/3e/7f6d3ebdca842e61864b698a277c5418.jpg" alt="Dosa">
+                        <button>Dosa</button>
+                    </a>
+                </div>
+
+                <!-- Section 3 -->
+                <div class="menu-item">
+                    <a href="Order.html">
+                        <img src="https://i.pinimg.com/474x/8b/17/0c/8b170c611e0565ea7e7c4172e2292a11.jpg" alt="Bisi-Bele-Bath">
+                        <button>Bisi-Bele-Bath</button>
+                    </a>
+                </div>
+                <div class="menu-item">
+                    <a href="Order.html">
+                        <img src="https://i.pinimg.com/474x/f2/73/da/f273da6f8904940b040b687d79cf2d61.jpg" alt="Sambar">
+                        <button>Sambar</button>
+                    </a>
+                </div>
+                <div class="menu-item">
+                    <a href="Order.html">
+                        <img src="https://i.pinimg.com/474x/8c/c3/23/8cc32343d8c1996a04ff685d5fdb4c83.jpg" alt="Uttapam">
+                        <button>Uttapam</button>
+                    </a>
+                </div>
+
+                <!-- Section 4 -->
+                <div class="menu-item">
+                    <a href="Order.html">
+                        <img src="https://i.pinimg.com/474x/e9/bd/1d/e9bd1d72950e3aa98445c15c4bcb74e9.jpg" alt="Pongal">
+                        <button>Pongal</button>
+                    </a>
+                </div>
+                <div class="menu-item">
+                    <a href="Order.html">
+                        <img src="https://i.pinimg.com/474x/0e/25/a9/0e25a900e87f97f2c684fa713f21873e.jpg" alt="Rasam">
+                        <button>Rasam</button>
+                    </a>
+                </div>
+                <div class="menu-item">
+                    <a href="Order.html">
+                        <img src="https://i.pinimg.com/474x/bb/43/a4/bb43a4e053ba8f807a92d0c72ee668dc.jpg" alt="Thoran">
+                        <button>Thoran</button>
+                    </a>
+                </div>
+
+                <!-- Section 5 -->
+                <div class="menu-item">
+                    <a href="Order.html">
+                        <img src="https://i.pinimg.com/474x/95/4e/d9/954ed9c5e30a41879373f115fe3a4417.jpg" alt="Upma">
+                        <button>Upma</button>
+                    </a>
+                </div>
+                <div class="menu-item">
+                    <a href="Order.html">
+                        <img src="https://i.pinimg.com/474x/ef/9d/37/ef9d37b5446e241ef9df69f204065c3a.jpg" alt="Avial">
+                        <button>Avial</button>
+                    </a>
+                </div>
+                <div class="menu-item">
+                    <a href="Order.html">
+                        <img src="https://i.pinimg.com/474x/98/6e/b3/986eb30c91145e9880418c032ba8676d.jpg" alt="Appam">
+                        <button>Appam</button>
+                    </a>
+                </div>
+            </div>
+        </fieldset>
+    </div>
+</body>
+</html>

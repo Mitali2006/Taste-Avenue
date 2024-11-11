@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dessert Menu</title>
+    <style>
+        /* Main container styling */
+        #main-container {
+            background-color: beige;
+            padding: 20px;
+        }
+
+        /* Grid container styling */
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 20px;
+            margin: 20px 0;
+        }
+
+        /* Menu item styling */
+        .menu-item {
+            width: 300px;
+            height: 300px;
+            border: 2px solid black;
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+            border-radius: 15px;
+            box-shadow: 8px 8px 16px black;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .menu-item img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 15px;
+        }
+
+        .menu-item button {
+            position: relative;
+            z-index: 1;
+            padding: 10px 20px;
+            background-color: rgba(255, 255, 255, 0.8);
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        /* Navigation styling */
+        nav {
+            margin-bottom: 20px;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        nav li {
+            display: inline;
+            margin-right: 15px;
+        }
+        nav a {
+            text-decoration: none;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div id="main-container">
+        <fieldset>
+            <legend>Dessert Menu</legend>
+            <nav>
+                <details>
+                    <summary>Navigation</summary>
+                    <ul>
+                        <li><a href="1st.html">Home</a></li>
+                        <li><a href="About.html">About</a></li>
+                        <li><a href="Menu.html">Menu</a></li>
+                        <li><a href="Contact.html">Contact Us</a></li>
+                    </ul>
+                </details>
+            </nav>
+
+            <!-- Dessert Menu Items -->
+            <div class="grid-container">
+                <!-- Section 1 -->
+                <div class="menu-item">
+                    <a href="Order.html">
+                        <img src="https://i.pinimg.com/474x/26/65/ae/2665aee2c46ccfd2e197bdc67a8f05e7.jpg" alt="Rasmalai">
+                        <button>Rasmalai</button>
+                    </a>
+                </div>
+                <div class="menu-item">
+                    <a href="Order.html">
+                        <img src="https://i.pinimg.com/474x/c1/45/ce/c145ce53202906749d1abcad3b8f218c.jpg" alt="Sandesh">
+                        <button>Sandesh</button>
+                    </a>
+                </div>
+                <div class="menu-item">
+                    <a href="Order.html">
+                        <img src="https://i.pinimg.com/474x/74/1f/40/741f400b9f4b81eacacfba7eac326b8e.jpg" alt="Rabri">
+                        <button>Rabri</button>
+                    </a>
+                </div>
+
+                <!-- Section 2 -->
+                <div class="menu-item">
+                    <a href="Order.html">
+                        <img src="https://i.pinimg.com/474x/68/2f/a7/682fa76529cbeee879d7aba259f458de.jpg" alt="Pie Cake">
+                        <button>Pie Cake</button>
+                    </a>
+                </div>
+                <div class="menu-item">
+                    <a href="Order.html">
+                        <img src="https://i.pinimg.com/474x/85/fa/53/85fa53766d57978bb160762e5e7afc57.jpg" alt="Phirni">
+                        <button>Phirni</button>
+                    </a>
+                </div>
+                <div class="menu-item">
+                    <a href="Order.html">
+                        <img src="https://i.pinimg.com/474x/ac/3b/a7/ac3ba7791e76bcf681051d0294821c72.jpg" alt="Khaja">
+                        <button>Khaja</button>
+                    </a>
+                </div>
+
+                <!-- Section 3 -->
+                <div class="menu-item">
+                    <a href="Order.html">
+                        <img src="https://i.pinimg.com/474x/60/59/bc/6059bcc8fe410a8e10aa9d2455cc821c.jpg" alt="Kulfi">
+                        <button>Kulfi</button>
+                    </a>
+                </div>
+                <div class="menu-item">
+                    <a href="Order.html">
+                        <img src="https://i.pinimg.com/474x/90/24/ad/9024ad9bf546c08a5affbbe94edd8580.jpg" alt="Gulab Jamun">
+                        <button>Gulab Jamun</button>
+                    </a>
+                </div>
+                <div class="menu-item">
+                    <a href="Order.html">
+                        <img src="https://i.pinimg.com/474x/83/18/bc/8318bc1b3c0b4f3fd89ec2f77003eb0f.jpg" alt="Tiramisu">
+                        <button>Tiramisu</button>
+                    </a>
+                </div>
+
+                <!-- Section 4 -->
+                <div class="menu-item">
+                    <a href="Order.html">
+                        <img src="https://i.pinimg.com/474x/50/01/7d/50017d4b8c7e77bda15b17fa0f7555f4.jpg" alt="Seviyan">
+                        <button>Seviyan</button>
+                    </a>
+                </div>
+                <div class="menu-item">
+                    <a href="Order.html">
+                        <img src="https://i.pinimg.com/474x/5a/ca/bf/5acabfcc73880f9d2b9e97e7785436e7.jpg" alt="Balushahi">
+                        <button>Balushahi</button>
+                    </a>
+                </div>
+                <div class="menu-item">
+                    <a href="Order.html">
+                        <img src="https://i.pinimg.com/474x/66/75/fe/6675fe80cec7c9ae75aedeb53a20134d.jpg" alt="Donut">
+                        <button>Donut</button>
+                    </a>
+                </div>
+
+                <!-- Section 5 -->
+                <div class="menu-item">
+                    <a href="Order.html">
+                        <img src="https://i.pinimg.com/474x/bc/48/40/bc48401d019155035d1f5b6503fbadf9.jpg" alt="Malpua">
+                        <button>Malpua</button>
+                    </a>
+                </div>
+                <div class="menu-item">
+                    <a href="Order.html">
+                        <img src="https://i.pinimg.com/474x/eb/f0/0c/ebf00c0df8d033eb4559c63ea9ef9e81.jpg" alt="Jalebi">
+                        <button>Jalebi</button>
+                    </a>
+                </div>
+                <div class="menu-item">
+                    <a href="Order.html">
+                        <img src="https://i.pinimg.com/474x/0a/be/ad/0abead669c304ecc62d14a56f5677143.jpg" alt="Chocolate Panna Cotta">
+                        <button>Chocolate Panna Cotta</button>
+                    </a>
+                </div>
+            </div>
+        </fieldset>
+    </div>
+</body>
+</html>

@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Italian Menu</title>
+    <style>
+        /* Main container styling */
+        #main-container {
+            background-color: beige;
+            padding: 20px;
+        }
+
+        /* Grid container styling */
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 20px;
+            margin: 20px 0;
+        }
+
+        /* Row item styling */
+        .menu-item {
+            width: 300px;
+            height: 200px;
+            border: 2px solid black;
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+            border-radius: 15px;
+            box-shadow: 8px 8px 16px black;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .menu-item img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 15px;
+        }
+
+        .menu-item button {
+            position: relative;
+            z-index: 1;
+            padding: 10px 20px;
+            background-color: rgba(255, 255, 255, 0.8);
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        /* Navigation styling */
+        nav {
+            margin-bottom: 20px;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        nav li {
+            display: inline;
+            margin-right: 15px;
+        }
+        nav a {
+            text-decoration: none;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div id="main-container">
+        <fieldset>
+            <legend>Italian Menu</legend>
+            <nav>
+                <details>
+                    <summary>Navigation</summary>
+                    <ul>
+                        <li><a href="1st.html">Home</a></li>
+                        <li><a href="About.html">About</a></li>
+                        <li><a href="Menu.html">Menu</a></li>
+                        <li><a href="Contact.html">Contact Us</a></li>
+                    </ul>
+                </details>
+            </nav>
+
+            <div class="grid-container">
+                <!-- Menu Items -->
+                <div id="row1" class="menu-item">
+                    <a href="Order.html">
+                        <img src="https://www.indianhealthyrecipes.com/wp-content/uploads/2024/04/white-sauce-pasta.jpg" alt="Sauce Pasta">
+                        <button>Sauce Pasta</button>
+                    </a>
+                </div>
+
+                <div id="row2" class="menu-item">
+                    <a href="Order.html">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOxXjmJWOUkxdo3JfoBBFkFbwFwjSPdoFwbQ&s" alt="Tortellini">
+                        <button>Tortellini</button>
+                    </a>
+                </div>
+
+                <div id="row3" class="menu-item">
+                    <a href="Order.html">
+                        <img src="https://realfood.tesco.com/media/images/1400x919-Tomato--basil-bruscetta-dc578aa1-4523-474b-b324-5aae3bd72e32-0-1400x919.jpg" alt="Bruschetta">
+                        <button>Bruschetta</button>
+                    </a>
+                </div>
+
+                <div id="row4" class="menu-item">
+                    <a href="Order.html">
+                        <img src="https://images.immediate.co.uk/production/volatile/sites/30/2017/03/Gnoochi-d7df2ce.png?quality=90&resize=556,505" alt="Gnocchi">
+                        <button>Gnocchi</button>
+                    </a>
+                </div>
+
+                <div id="row5" class="menu-item">
+                    <a href="Order.html">
+                        <img src="https://cdn.loveandlemons.com/wp-content/uploads/2023/12/vegetarian-lasagna-scaled.jpg" alt="Lasagna">
+                        <button>Lasagna</button>
+                    </a>
+                </div>
+
+                <div id="row6" class="menu-item">
+                    <a href="Order.html">
+                        <img src="https://static.toiimg.com/photo/93068647.cms" alt="Red Sauce Pasta">
+                        <button>Red Sauce Pasta</button>
+                    </a>
+                </div>
+
+                <div id="row7" class="menu-item">
+                    <a href="Order.html">
+                        <img src="https://www.connoisseurusveg.com/wp-content/uploads/2021/08/vegan-mushroom-risotto-21-13-of-16.jpg" alt="Risotto">
+                        <button>Risotto</button>
+                    </a>
+                </div>
+
+                <div id="row8" class="menu-item">
+                    <a href="Order.html">
+                        <img src="https://cdn.loveandlemons.com/wp-content/uploads/2020/08/stuffed-peppers.jpg" alt="Stuffed Bell Peppers">
+                        <button>Stuffed Bell Peppers</button>
+                    </a>
+                </div>
+
+                <div id="row9" class="menu-item">
+                    <a href="Order.html">
+                        <img src="https://images.services.kitchenstories.io/UY89c4f471NaK1C-BQ07FGZ_qVA=/3840x0/filters:quality(80)/images.kitchenstories.io/wagtailOriginalImages/R131-final-photo-3-sg.jpg" alt="Spaghetti Aglio e Olio">
+                        <button>Spaghetti Aglio e Olio</button>
+                    </a>
+                </div>
+
+                <div id="row10" class="menu-item">
+                    <a href="Order.html">
+                        <img src="https://www.allrecipes.com/thmb/qMcvxbWtk8ab5C93COROdHpuVGk=/0x512/filters:no_upscale():max_bytes(150000):strip_icc()/17918-focaccia-bread-DDMFS-4x3-6fd208e7c12b493fbfde9c643df714be.jpg" alt="Focaccia Bread">
+                        <button>Focaccia Bread</button>
+                    </a>
+                </div>
+
+                <div id="row11" class="menu-item">
+                    <a href="Order.html">
+                        <img src="https://ohsweetbasil.com/wp-content/uploads/15-minute-pesto-pasta-recipe-6-500x500.jpg" alt="Pesto Pasta">
+                        <button>Pesto Pasta</button>
+                    </a>
+                </div>
+
+                <div id="row12" class="menu-item">
+                    <a href="Order.html">
+                        <img src="https://www.allrecipes.com/thmb/Usj7zOLJSQ5xqw-4dwWarvPNjJg=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/AR-228126-caprese-salad-with-balsamic-reduction-ddmfs-2644-4x3-f32ac2b2fb9d4234884a752490fb015b.jpg" alt="Caprese Salad">
+                        <button>Caprese Salad</button>
+                    </a>
+                </div>
+            </div>
+        </fieldset>
+    </div>
+</body>
+</html>

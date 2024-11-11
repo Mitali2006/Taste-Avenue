@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snacks Menu</title>
+    <style>
+        /* Main container styling */
+        #main-container {
+            background-color: beige;
+            padding: 20px;
+        }
+
+        /* Grid container styling */
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 20px;
+            margin: 20px 0;
+        }
+
+        /* Menu item styling */
+        .menu-item {
+            width: 300px;
+            height: 300px;
+            border: 2px solid black;
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+            border-radius: 15px;
+            box-shadow: 8px 8px 16px black;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .menu-item img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 15px;
+        }
+
+        .menu-item button {
+            position: relative;
+            z-index: 1;
+            padding: 10px 20px;
+            background-color: rgba(255, 255, 255, 0.8);
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        /* Navigation styling */
+        nav {
+            margin-bottom: 20px;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        nav li {
+            display: inline;
+            margin-right: 15px;
+        }
+        nav a {
+            text-decoration: none;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div id="main-container">
+        <fieldset>
+            <legend>Snacks Menu</legend>
+            <nav>
+                <details>
+                    <summary>Navigation</summary>
+                    <ul>
+                        <li><a href="1st.html">Home</a></li>
+                        <li><a href="About.html">About</a></li>
+                        <li><a href="Menu.html">Menu</a></li>
+                        <li><a href="Contact.html">Contact Us</a></li>
+                    </ul>
+                </details>
+            </nav>
+
+            <!-- Snacks Menu Grid -->
+            <div class="grid-container">
+                <!-- Section 1 -->
+                <div class="menu-item">
+                    <a href="Order.html">
+                        <img src="https://i.pinimg.com/474x/59/bb/e6/59bbe68ec79b50eba0eb6d64d6eee20b.jpg" alt="Pani Puri">
+                        <button>Pani Puri</button>
+                    </a>
+                </div>
+                <div class="menu-item">
+                    <a href="Order.html">
+                        <img src="https://i.pinimg.com/474x/1d/98/cf/1d98cf0172a7d959392b3a78635b9802.jpg" alt="Dhokla">
+                        <button>Dhokla</button>
+                    </a>
+                </div>
+                <div class="menu-item">
+                    <a href="Order.html">
+                        <img src="https://i.pinimg.com/474x/e8/35/ed/e835ed89023c2a6d2d1933321d59efc4.jpg" alt="Momos">
+                        <button>Momos</button>
+                    </a>
+                </div>
+
+                <!-- Section 2 -->
+                <div class="menu-item">
+                    <a href="Order.html">
+                        <img src="https://i.pinimg.com/474x/08/06/65/080665ba4459ba543f2eb68ed3572a19.jpg" alt="Aloo Tikki">
+                        <button>Aloo Tikki</button>
+                    </a>
+                </div>
+                <div class="menu-item">
+                    <a href="Order.html">
+                        <img src="https://i.pinimg.com/474x/7c/0c/f2/7c0cf2f2e70e023bc5ddb1d3cc74b18b.jpg" alt="Pakora">
+                        <button>Pakora</button>
+                    </a>
+                </div>
+                <div class="menu-item">
+                    <a href="Order.html">
+                        <img src="https://blessmyfoodbypayal.com/wp-content/uploads/2021/06/1624343803909.jpg" alt="Veg Parcel">
+                        <button>Veg Parcel</button>
+                    </a>
+                </div>
+
+                <!-- Section 3 -->
+                <div class="menu-item">
+                    <a href="Order.html">
+                        <img src="https://i.pinimg.com/474x/bc/54/8a/bc548a4846d7671b9dc69e534ff2b5ef.jpg" alt="Dahi Puri">
+                        <button>Dahi Puri</button>
+                    </a>
+                </div>
+                <div class="menu-item">
+                    <a href="Order.html">
+                        <img src="https://i.pinimg.com/474x/c7/e5/bf/c7e5bf59d01fe6d04c6e9132ef4f345b.jpg" alt="Banana Chips">
+                        <button>Banana Chips</button>
+                    </a>
+                </div>
+                <div class="menu-item">
+                    <a href="Order.html">
+                        <img src="https://i.pinimg.com/474x/20/84/33/208433112dcc181a6aeb634aae601ff8.jpg" alt="Misal Pav">
+                        <button>Misal Pav</button>
+                    </a>
+                </div>
+
+                <!-- Section 4 -->
+                <div class="menu-item">
+                    <a href="Order.html">
+                        <img src="https://i.pinimg.com/474x/3d/3d/50/3d3d502d1b33f26ff61ec86c9037031b.jpg" alt="Nachos">
+                        <button>Nachos</button>
+                    </a>
+                </div>
+                <div class="menu-item">
+                    <a href="Order.html">
+                        <img src="https://i.pinimg.com/474x/06/ab/5a/06ab5a30b1487662512899ff02cc0aab.jpg" alt="Fries">
+                        <button>Fries</button>
+                    </a>
+                </div>
+                <div class="menu-item">
+                    <a href="Order.html">
+                        <img src="https://i.pinimg.com/474x/48/7f/6b/487f6b2679a185312aedc48937c150ae.jpg" alt="Vada Pav">
+                        <button>Vada Pav</button>
+                    </a>
+                </div>
+
+                <!-- Section 5 -->
+                <div class="menu-item">
+                    <a href="Order.html">
+                        <img src="https://i.pinimg.com/474x/b4/95/08/b495080f05969f6a6d0c6b66023700c3.jpg" alt="Kachori">
+                        <button>Kachori</button>
+                    </a>
+                </div>
+                <div class="menu-item">
+                    <a href="Order.html">
+                        <img src="https://i.pinimg.com/474x/05/a8/20/05a820af66519b0763fab82a98b4f421.jpg" alt="Tacos">
+                        <button>Tacos</button>
+                    </a>
+                </div>
+                <div class="menu-item">
+                    <a href="Order.html">
+                        <img src="https://i.pinimg.com/474x/e6/9c/97/e69c976b3fa1376a7a3ac3ebe5f38f0a.jpg" alt="Sev Puri">
+                        <button>Sev Puri</button>
+                    </a>
+                </div>
+
+                <!-- Section 6 -->
+                <div class="menu-item">
+                    <a href="Order.html">
+                        <img src="https://i.pinimg.com/474x/1d/85/e4/1d85e48d42d63dab2a617ace014f29fe.jpg" alt="Peri Peri Fries">
+                        <button>Peri Peri Fries</button>
+                    </a>
+                </div>
+                <div class="menu-item">
+                    <a href="Order.html">
+                        <img src="https://i.pinimg.com/474x/25/65/a3/2565a39f6f119ba5dd3da627f9781994.jpg" alt="Poha">
+                        <button>Poha</button>
+                    </a>
+                </div>
+                <div class="menu-item">
+                    <a href="Order.html">
+                        <img src="https://i.pinimg.com/474x/71/e3/8d/71e38d2a0b53f1ef988d1fbb12ef6530.jpg" alt="Chaat">
+                        <button>Chaat</button>
+                    </a>
+                </div>
+
+                <!-- Section 7 -->
+                <div class="menu-item">
+                    <a href="Order.html">
+                        <img src="Chakli.jpg" alt="Chakli">
+                        <button>Chakli</button>
+                    </a>
+                </div>
+                <div class="menu-item">
+                    <a href="Order.html">
+                        <img src="https://i.pinimg.com/474x/d0/ea/a1/d0eaa109f1236075da01b05c276e4f7e.jpg" alt="Cheesy Fries">
+                        <button>Cheesy Fries</button>
+                    </a>
+                </div>
+                <div class="menu-item">
+                    <a href="Order.html">
+                        <img src="https://i.pinimg.com/474x/f0/84/cc/f084ccd588f606ecdf993019897c2523.jpg" alt="Garlic Bread">
+                        <button>Garlic Bread</button>
+                    </a>
+                </div>
+
+                <!-- Section 8 -->
+                <div class="menu-item">
+                    <a href="Order.html">
+                        <img src="https://i.pinimg.com/474x/43/73/4b/43734bc7edd29db24a720f63611a3cf1.jpg" alt="Bhel Puri">
+                        <button>Bhel Puri</button>
+                    </a>
+                </div>
+                <div class="menu-item">
+                    <a href="Order.html">
+                        <img src="https://i.pinimg.com/474x/f3/bb/57/f3bb577112e29ba59c4f44507898b26e.jpg" alt="Pav Bhaji">
+                        <button>Pav Bhaji</button>
+                    </a>
+                </div>
+                <div class="menu-item">
+                    <a href="Order.html">
+                        <img src="https://i.pinimg.com/474x/a7/1c/e3/a71ce353c27ffdf24b6a7539d37bcdd1.jpg" alt="Spring Rolls">
+                        <button>Spring Rolls</button>
+                    </a>
+                </div>
+            </div>
+        </fieldset>
+    </div>
+</body>
+</html>
